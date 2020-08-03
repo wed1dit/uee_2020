@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in to examserver</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      .jumbotron-cfg {
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        top: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    {%if metadata %}
+        <h1>{{metadata}}</h1>
+    {%endif%}
+    <div class="jumbotron jumbotron-cfg">
+      <h1 class="display-5">შეფასებისა და გამოცდების ეროვნული ცენტრი 2020</h1>
+      <p class="lead">
+        საგამოცდო ტესტის გადმოწერა შესაძლებელია სესიის დაწყებამდე 30 წუთით ადრე
+      </p>
+      <hr class="my-4" />
+      <p>
+        <strong>შეიტანეთ დაშვების კოდი</strong>
+      </p>
+      <form method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+          <!-- <input
+            type="password"
+            style="width: 20em;"
+            class="form-control"
+            name="session_code"
+            placeholder="დაშვების კოდი"
+          /> -->
+          {{form.password(class_='form-control', style='width:17.3em')}}
+        </div>
+      </form>
+      <p class="lead">
+        
+        {{form.submit(class_="btn btn-primary btn-lg")}}
+        
+      </p>
+      <div class="alert alert-danger" role="alert">
+        This is a danger alert—check it out!
+      </div>
+    </div>
+    
+  </body>
+</html>

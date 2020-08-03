@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in to examserver</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .jumbotron-cfg {
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            top: 25px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-cfg">
+    
+      
+      <p class="lead">
+        შეფასებისა და გამოცდების ეროვნული ცენტრი 2020
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{{url_for('download')}}" role="button">ავტორიზაცია <small>>></small></a>
+      </p>
+    </div>
+  </body>
+</html>

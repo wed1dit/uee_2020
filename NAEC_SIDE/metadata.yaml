@@ -1,0 +1,11 @@
+common:
+  kor_passwd: $hzs21
+  date: 02/08/2020
+
+session:
+  
+  session_code: 5522
+  session: I
+  subjects: ["უნარების I ვარიანტი", "უნარების I ვარიანტი მათემატიკური ნაწილი"]
+  
+    
